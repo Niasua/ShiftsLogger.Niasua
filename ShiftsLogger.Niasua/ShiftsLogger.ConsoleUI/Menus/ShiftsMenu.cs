@@ -345,7 +345,7 @@ public class ShiftsMenu
 
         if (confirmation == "Yes")
         {
-            var deleted = ApiService.DeleteShiftAsync(shift.Id);
+            await ApiService.DeleteShiftAsync(shift.Id);
             AnsiConsole.MarkupLine("\n[green]Shift was successfully removed.[/]");
         }
         else

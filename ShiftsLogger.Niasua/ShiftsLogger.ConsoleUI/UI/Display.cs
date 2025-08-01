@@ -13,8 +13,6 @@ public static class Display
         table.AddColumn("[blue]Name[/]");
         table.AddColumn("[green]Job[/]");
 
-        var apiService = new ApiService();
-
         foreach (var worker in workers)
         {
             table.AddRow(
