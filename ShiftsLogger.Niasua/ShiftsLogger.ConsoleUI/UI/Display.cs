@@ -33,8 +33,6 @@ public static class Display
         table.AddColumn("[blue]Name[/]");
         table.AddColumn("[green]Job[/]");
 
-        var apiService = new ApiService();
-
         table.AddRow(
                  worker.Id.ToString(),
                  worker.Name.ToString(),
